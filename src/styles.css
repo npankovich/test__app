@@ -75,6 +75,7 @@ button, input, select, textarea {
     border-radius: 3px;
     display: inline-block;
     padding: 5px 5px 5px 30px;
+    width: 250px;
 }
 
 .todoList__content input[type="checkbox"] + label:hover {
