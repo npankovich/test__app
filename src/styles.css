@@ -155,3 +155,38 @@ button, input, select, textarea {
 }
 
 
+/*Modal*/
+
+.todoList__modal .todoList__modal__form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 0 10px 0 5px;
+    border-bottom: 1px solid #8e979c;
+}
+
+.todoList__modal .todoList__modal__form > * {
+    background: transparent;
+    border: none;
+    height: 35px;
+}
+
+.todoList__modal .todoList__modal__form [type='text'] {
+    padding: 0 5px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #6c717b;
+    outline: none;
+}
+
+.todoList__modal .todoList__modal__form_buttons a{
+    text-decoration: none;
+}
+
+.todoList__modal .todoList__modal__form_buttons i {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #8e979c;
+}
+
+
