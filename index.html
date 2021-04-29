@@ -5,9 +5,41 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Test App</title>
 </head>
 <body>
+<div class="todoList">
+    <div class="todoList__img"></div>
+    <div class="todoList__content">
+        <ul class="todoList__content__inner">
+            <li>
+                <input type="checkbox" id="todo_1">
+                <label for="todo_1">
+                    <span class="check"></span>
+                   Drink coffe
+                </label>
+                <i class="fas fa-trash"></i>
+            </li>
+            <li>
+                <input type="checkbox" id="todo_2">
+                <label for="todo_2">
+                    <span class="check"></span>
+                    Eat chocolate
+                </label>
+                <i class="fas fa-trash"></i>
+            </li>
+            <li>
+                <input type="checkbox" id="todo_3">
+                <label for="todo_3">
+                    <span class="check"></span>
+                    Be happy
+                </label>
+                <i class="fas fa-trash"></i>
+            </li>
+        </ul>
+    </div>
+</div>
 
 <script src="dist/bundle.js"></script>
 </body>
