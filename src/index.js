@@ -67,4 +67,36 @@ jQuery(document).ready(function () {
         });
 
 
+
+
+
+           // Added button
+           let newSpanText;
+           let spanEl;
+
+        jQuery(".todoList__content__inner").on("click", ".edit", function(e) {
+
+            let currentEl = e.target;
+            let closestLi = currentEl.closest('li');
+            let indexOfLi = $(closestLi).index();
+            spanEl = closestLi.getElementsByClassName('todoList__content__text');
+            let currentSpanText = spanEl[0].innerHTML;
+
+            document.getElementById('edit__modal-input').value = currentSpanText;
+    });
+
+
+
+        // Save value added button
+
+        jQuery(document).on('click', '.added-todo', function(e) {
+
+            newSpanText = document.getElementById('edit__modal-input').value;
+            spanEl[0].innerHTML = newSpanText;
+            document.getElementById('edit__modal-input').value = "";
+        });
+
+
+
+
 });
