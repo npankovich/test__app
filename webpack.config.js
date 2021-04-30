@@ -15,6 +15,11 @@ const config = {
       template: path.resolve(__dirname, './index.html'),
       filename: 'index.html'
     }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
+    }),
     new CleanWebpackPlugin()
   ],
   module: {

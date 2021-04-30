@@ -15,27 +15,27 @@
         <ul class="todoList__content__inner">
             <li>
                 <input type="checkbox" id="todo_1">
-                <label for="todo_1">
+                <label for="todo_1" class="label">
                     <span class="check"></span>
-                   Drink coffe
+                    <span class="todoList__content__text">Drink coffe</span>
                 </label>
                 <i class="fas fa-pen-square edit"></i>
                 <i class="fas fa-trash delete"></i>
             </li>
             <li>
                 <input type="checkbox" id="todo_2">
-                <label for="todo_2">
+                <label for="todo_2" class="label">
                     <span class="check"></span>
-                    Eat chocolate
+                    <span class="todoList__content__text">Eat chocolate</span>
                 </label>
                 <i class="fas fa-pen-square edit"></i>
                 <i class="fas fa-trash delete"></i>
             </li>
             <li>
                 <input type="checkbox" id="todo_3">
-                <label for="todo_3">
+                <label for="todo_3" class="label">
                     <span class="check"></span>
-                    Be happy
+                    <span class="todoList__content__text">Be happy</span>
                 </label>
                 <i class="fas fa-pen-square edit"></i>
                 <i class="fas fa-trash delete"></i>
@@ -47,9 +47,9 @@
             </a>
         </div>
     </div>
-    <div class="todoList__modal">
+    <div class="todoList__modal add__modal">
         <form class="todoList__modal__form">
-            <input type="text" name="add" placeholder="Add todo">
+            <input type="text" name="add" placeholder="Add todo" maxlength="15">
             <div class="todoList__modal__form_buttons">
                 <a href="#0" class="add-todo">
                     <i class="fas fa-plus add"></i>
@@ -58,6 +58,7 @@
         </form>
     </div>
 </div>
+
 
 <script src="dist/bundle.js"></script>
 </body>
